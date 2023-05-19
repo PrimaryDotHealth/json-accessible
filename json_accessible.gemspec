@@ -28,6 +28,10 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  spec.add_dependency 'activesupport'
+
+  spec.add_development_dependency 'activemodel', '~> 7.0', '>= 7.0.4.3'
+  spec.add_development_dependency 'rails_helper', '~> 2.2', '>= 2.2.2'
   spec.add_development_dependency 'rake', '~> 12.3.3'
   spec.add_development_dependency 'rspec', '~> 3.6', '>= 3.6.0'
 end
