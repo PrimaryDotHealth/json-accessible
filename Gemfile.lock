@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     json_accessible (0.1.0)
+      activemodel (~> 7.0, >= 7.0.4.3)
       activesupport
 
 GEM
@@ -75,7 +76,6 @@ PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
-  activemodel (~> 7.0, >= 7.0.4.3)
   json_accessible!
   pry-byebug
   rails_helper (~> 2.2, >= 2.2.2)

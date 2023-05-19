@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 MockModel = Struct.new(:json, keyword_init: true) do
-  include ActiveModel::Validations
+  require ActiveModel::Validations
   validates :json, json: { includes: [:username, :password, :optional?, { nested: { child: %i[grandchild] } }] }
 end
 
